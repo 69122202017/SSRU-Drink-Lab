@@ -5,12 +5,20 @@
 const products = [
     { id: 1, name: "ชาไทย", category: "ชานม", price: 45, type: "ชา", temperature: "เย็น", image: "images/thai-tea.png" },
     { id: 2, name: "อเมริกาโน่เย็น", category: "กาแฟ", price: 50, type: "กาแฟ", temperature: "เย็น", image: "images/iced-americano.png" },
-    { id: 3, name: "มัทฉะลาเต้", category: "ชานม", price: 60, type: "ชา", temperature: "เย็น", image: "images/matcha-latte.png" },
+    { id: 3, name: "มัทฉะลาเต้", category: "ชา", price: 60, type: "ชา", temperature: "เย็น", image: "images/matcha-latte.png" },
     { id: 4, name: "โกโก้เย็น", category: "โกโก้", price: 55, type: "โกโก้", temperature: "เย็น", image: "images/iced-cocoa.png" },
     { id: 5, name: "ลาเต้เย็น", category: "กาแฟ", price: 55, type: "กาแฟ", temperature: "เย็น", image: "images/iced-latte.png" },
     { id: 6, name: "ชานมไต้หวัน", category: "ชานม", price: 50, type: "ชานม", temperature: "เย็น", image: "images/taiwan-milk-tea.png" },
     { id: 7, name: "เลมอนที", category: "ชา", price: 45, type: "ชา", temperature: "เย็น", image: "images/lemon-tea.png" },
-    { id: 8, name: "สตรอว์เบอร์รี่มิลค์", category: "ผลไม้", price: 65, type: "ผลไม้", temperature: "เย็น", image: "images/strawberry-milk.png" }
+    { id: 8, name: "สตรอว์เบอร์รี่มิลค์", category: "ผลไม้", price: 65, type: "ผลไม้", temperature: "เย็น", image: "images/strawberry-milk.png" },
+    { id: 9, name: "ช็อกโกแลตมิ้นท์", category: "โกโก้", price: 60, type: "โกโก้", temperature: "เย็น", image: "images/choco-mint.png" },
+    { id: 10, name: "นมสดคาราเมล", category: "นมสด", price: 50, type: "นมสด", temperature: "เย็น", image: "images/caramel-milk.png" },
+    { id: 11, name: "ชาเขียวมะลิ", category: "ชา", price: 45, type: "ชา", temperature: "เย็น", image: "images/jasmine-green-tea.png" },
+    { id: 12, name: "บ๊วยโซดา", category: "ผลไม้", price: 40, type: "ผลไม้", temperature: "เย็น", image: "images/plum-soda.png" },
+    { id: 13, name: "นมชมพูเย็น", category: "นมสด", price: 45, type: "นมสด", temperature: "เย็น", image: "images/pink-milk.png" },
+    { id: 14, name: "อเมริกาโน่น้ำผึ้ง", category: "กาแฟ", price: 60, type: "กาแฟ", temperature: "เย็น", image: "images/honey-americano.png" },
+    { id: 15, name: "พีชโซดา", category: "ผลไม้", price: 50, type: "ผลไม้", temperature: "เย็น", image: "images/peach-soda.png" },
+    { id: 16, name: "เอสเพรสโซ่เย็น", category: "กาแฟ", price: 55, type: "กาแฟ", temperature: "เย็น", image: "images/espresso.png" }
 ];
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];

@@ -13,7 +13,7 @@
 <body>
 
     <header class="navbar">
-        <div class="logo">🥤 SSRU <span>DRINK LAB</span></div>
+        <div class="logo">🧋 SSRU <span>DRINK LAB</span></div>
         <nav>
             <a href="index.html">หน้าแรก</a>
             <a href="products.html">เมนู</a>
@@ -29,7 +29,7 @@
     <main>
         <!-- PAGE HEADER -->
         <section class="products-hero">
-            <p class="section-label">🥤 OUR MENU</p>
+            <p class="section-label">🧋 OUR MENU</p>
             <h1>ค้นพบเครื่องดื่มที่คุณชอบ</h1>
             <p>เลือกจากเครื่องดื่มหลากหลายประเภท และค้นหาเมนูที่เหมาะกับคุณ</p>
         </section>
@@ -46,6 +46,7 @@
                 <button data-category="ชา">🍵 ชา</button>
                 <button data-category="โกโก้">🍫 โกโก้</button>
                 <button data-category="ผลไม้">🍓 ผลไม้</button>
+                <button data-category="นมสด">🥛 นมสด</button>
                 <button id="intersectionBtn">🔥 ชาที่เป็นเมนูฮิต</button>
             </div>
         </section>
@@ -57,7 +58,7 @@
                     <p class="section-label">⭐ OUR PRODUCTS</p>
                     <h2>เมนูทั้งหมด</h2>
                 </div>
-                <p>พบสินค้า <strong>8</strong> รายการ</p>
+                <p>พบสินค้า <strong>16</strong> รายการ</p>
             </div>
 
             <div class="product-grid">
@@ -131,7 +132,6 @@
                 <div class="shop-card" data-category="กาแฟ" data-price="55" data-type="กาแฟ" data-temperature="เย็น">
                     <div class="shop-image pink">
                         <img src="images/iced-latte.png" alt="Iced Latte">
-                        <span class="badge hot">HOT</span>
                     </div>
                     <div class="shop-info">
                         <p class="product-category">กาแฟ</p>
@@ -180,7 +180,6 @@
                 <div class="shop-card" data-category="ผลไม้" data-price="65" data-type="ผลไม้" data-temperature="เย็น">
                     <div class="shop-image peach">
                         <img src="images/strawberry-milk.png" alt="Iced Strawberry Milk with Slices">
-                        <span class="badge new">NEW</span>
                     </div>
                     <div class="shop-info">
                         <p class="product-category">ผลไม้</p>
@@ -192,7 +191,140 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- PRODUCT 9 - ช็อกโกแลตมิ้นท์ (NEW) -->
+                <div class="shop-card" data-category="โกโก้" data-price="60" data-type="โกโก้" data-temperature="เย็น">
+                    <div class="shop-image brown">
+                        <img src="images/choco-mint.png" alt="ช็อกโกแลตมิ้นท์">
+                        <span class="badge new">NEW</span>
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">โกโก้</p>
+                        <h3>ช็อกโกแลตมิ้นท์</h3>
+                        <p>โกโก้เข้มข้นผสมความหอมเย็นสดชื่นของมิ้นท์</p>
+                        <div class="shop-bottom">
+                            <strong>฿60</strong>
+                            <button onclick="openCustomizeModal(9)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 10 - นมสดคาราเมล -->
+                <div class="shop-card" data-category="นมสด" data-price="50" data-type="นมสด" data-temperature="เย็น">
+                    <div class="shop-image beige">
+                        <img src="images/caramel-milk.png" alt="นมสดคาราเมล">
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">นมสด</p>
+                        <h3>นมสดคาราเมล</h3>
+                        <p>นมสดละมุนราดซอสคาราเมลหอมหวานกลมกล่อม</p>
+                        <div class="shop-bottom">
+                            <strong>฿50</strong>
+                            <button onclick="openCustomizeModal(10)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 11 - ชาเขียวมะลิ -->
+                <div class="shop-card" data-category="ชา" data-price="45" data-type="ชา" data-temperature="เย็น">
+                    <div class="shop-image light-green">
+                        <img src="images/jasmine-green-tea.png" alt="ชาเขียวมะลิ">
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">ชา</p>
+                        <h3>ชาเขียวมะลิ</h3>
+                        <p>ชาเขียวใสกลิ่นมะลิหอมละมุน ดื่มแล้วชื่นใจ</p>
+                        <div class="shop-bottom">
+                            <strong>฿45</strong>
+                            <button onclick="openCustomizeModal(11)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 12 - บ๊วยโซดา (HOT) -->
+                <div class="shop-card" data-category="ผลไม้" data-price="40" data-type="ผลไม้" data-temperature="เย็น">
+                    <div class="shop-image orange-yellow">
+                        <img src="images/plum-soda.png" alt="บ๊วยโซดา">
+                        <span class="badge hot">HOT</span>
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">ผลไม้</p>
+                        <h3>บ๊วยโซดา</h3>
+                        <p>รสเปรี้ยวเค็มหวานซ่าลงตัว คลายร้อนได้ดีเยี่ยม</p>
+                        <div class="shop-bottom">
+                            <strong>฿40</strong>
+                            <button onclick="openCustomizeModal(12)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 13 - นมชมพูเย็น -->
+                <div class="shop-card" data-category="นมสด" data-price="45" data-type="นมสด" data-temperature="เย็น">
+                    <div class="shop-image pink">
+                        <img src="images/pink-milk.png" alt="นมชมพูเย็น">
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">นมสด</p>
+                        <h3>นมชมพูเย็น</h3>
+                        <p>นมเย็นหวานมันสีชมพูละมุน ขวัญใจทุกวัย</p>
+                        <div class="shop-bottom">
+                            <strong>฿45</strong>
+                            <button onclick="openCustomizeModal(13)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 14 - อเมริกาโน่น้ำผึ้ง (NEW) -->
+                <div class="shop-card" data-category="กาแฟ" data-price="60" data-type="กาแฟ" data-temperature="เย็น">
+                    <div class="shop-image beige">
+                        <img src="images/honey-americano.png" alt="อเมริกาโน่น้ำผึ้ง">
+                        <span class="badge new">NEW</span>
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">กาแฟ</p>
+                        <h3>อเมริกาโน่น้ำผึ้ง</h3>
+                        <p>กาแฟดำเข้มผสานความหวานหอมธรรมชาติจากน้ำผึ้งแท้</p>
+                        <div class="shop-bottom">
+                            <strong>฿60</strong>
+                            <button onclick="openCustomizeModal(14)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 15 - พีชโซดา -->
+                <div class="shop-card" data-category="ผลไม้" data-price="50" data-type="ผลไม้" data-temperature="เย็น">
+                    <div class="shop-image peach">
+                        <img src="images/peach-soda.png" alt="พีชโซดา">
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">ผลไม้</p>
+                        <h3>พีชโซดา</h3>
+                        <p>โซดาซ่าส์สะใจผสมกลิ่นพีชหอมหวานสดชื่น</p>
+                        <div class="shop-bottom">
+                            <strong>฿50</strong>
+                            <button onclick="openCustomizeModal(15)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT 16 - เอสเพรสโซ่เย็น -->
+                <div class="shop-card" data-category="กาแฟ" data-price="55" data-type="กาแฟ" data-temperature="เย็น">
+                    <div class="shop-image beige">
+                        <img src="images/espresso.png" alt="เอสเพรสโซ่เย็น">
+                    </div>
+                    <div class="shop-info">
+                        <p class="product-category">กาแฟ</p>
+                        <h3>เอสเพรสโซ่เย็น</h3>
+                        <p>กาแฟรสชาติเข้มข้น กลมกล่อมลงตัวแบบไทยสไตล์</p>
+                        <div class="shop-bottom">
+                            <strong>฿55</strong>
+                            <button onclick="openCustomizeModal(16)">+ เพิ่ม</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        </div>
         </section>
 
         <!-- DISCRETE MATHEMATICS / SMART FILTER -->
@@ -221,7 +353,7 @@
     </main>
 
     <footer>
-        <h2>🥤 SSRU DRINK LAB</h2>
+        <h2>🧋 SSRU DRINK LAB</h2>
         <p>เครื่องดื่มสำหรับทุกช่วงเวลาของคุณ</p>
         <p>© 2026 SSRU Drink Lab</p>
     </footer>

@@ -449,28 +449,37 @@ input {
 
 .products-hero {
     width: 100%;
-
     padding: 80px 8%;
-
     text-align: center;
-
-    background: linear-gradient(
-        135deg,
-        #F4E8DB,
-        #FFF8F1
-    );
+    background-image: url('images/banner-true.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* กำหนดสีตัวหนังสือหลักเป็นสีขาว */
 }
 
+/* ป้าย Tag ด้านบน (🧋 OUR MENU) */
+.products-hero .section-label {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.35); /* ใส่พื้นหลังสีดำใสให้ป้ายเด่นขึ้น */
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+}
 
+/* หัวข้อหลัก (ค้นพบเครื่องดื่มที่คุณชอบ) */
 .products-hero h1 {
     font-size: 48px;
     margin: 15px 0;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* เงาดำช่วยให้ตัวหนังสือลอยออกมาอ่านง่าย */
 }
 
-
+/* ข้อความรายละเอียดด้านล่าง */
 .products-hero > p:last-child {
-    color: var(--text-muted);
+    color: #ffffff;
     font-size: 18px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* เงาดำช่วยลดการกลืนกับพื้นหลัง */
 }
 
 
@@ -1728,4 +1737,26 @@ footer p {
     padding: 0;
     margin: 0;
     pointer-events: none;
+}
+/* 1. ทำให้การ์ดสินค้าทุกอันเป็น Flexbox และสูงเท่ากันตลอดแนว */
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* ให้การ์ดสูงเต็มพื้นที่กริด */
+}
+
+/* 2. ให้ส่วนข้อความภายในขยายเต็มพื้นที่ที่เหลือ */
+.shop-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* ดึงพื้นที่ว่างทั้งหมดใน Card มาใช้ */
+}
+
+/* 3. ดันแถวราคาและปุ่ม (+ เพิ่ม) ลงมาชิดขอบด้านล่างสุดของ Card เสมอ */
+.shop-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto; /* ดันให้อยู่ล่างสุดอัตโนมัติ */
+    padding-top: 12px;
 }
