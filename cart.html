@@ -62,11 +62,13 @@
 
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <!-- เพิ่มปุ่มเลือกทั้งหมด -->
-                            <button type="button" id="selectAllBtn" onclick="toggleSelectAll()" class="select-all-btn" style="background: #e0e0e0; color: #333; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 14px;">
+                            <button type="button" id="selectAllBtn" onclick="toggleSelectAll()" class="select-all-btn"
+                                style="background: #e0e0e0; color: #333; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 14px;">
                                 เลือกทั้งหมด
                             </button>
 
-                            <button id="deleteSelectedBtn" onclick="deleteSelectedItems()" class="delete-selected-btn" style="display: none; background: #ff5252; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 14px;">
+                            <button id="deleteSelectedBtn" onclick="deleteSelectedItems()" class="delete-selected-btn"
+                                style="display: none; background: #ff5252; color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; font-size: 14px;">
                                 ลบที่เลือก
                             </button>
                             <span id="cartCount">
@@ -141,7 +143,7 @@
                             </strong>
 
                             <p>
-                                สมัครสมาชิกเพื่อรับส่วนลด
+                                กดติ้ก ✓ เพื่อรับส่วนลด 10 % เมื่อซื้อครบ 300 บาท
                             </p>
 
                         </div>
@@ -164,6 +166,12 @@
                         </p>
 
                     </div>
+
+                    <!-- ➕ เพิ่มปุ่มสุ่มส่วนลดตรงนี้ -->
+                    <button type="button" id="luckyBtn" class="lucky-btn"
+                        style="width: 100%; background: #ff03b7; color: white; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-bottom: 12px; font-size: 15px;">
+                        🎁 กดสุ่มส่วนลด (ช้อปครบ 300.-)
+                    </button>
 
                     <div class="total-row">
 

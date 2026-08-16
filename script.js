@@ -183,7 +183,7 @@ function updateLuckyDrawUI() {
         if (hasSpunLucky) {
             promoDescEl.innerHTML = `<span style="color: #5a8264; font-weight: bold;">🎉 สุ่มส่วนลดสำเร็จ! ได้รับส่วนลด ${luckyDiscountAmount} บาท</span>`;
         } else {
-            promoDescEl.innerHTML = `ซื้อครบ 300 บาท รับส่วนลด 10% หรือกดสุ่มส่วนลดพิเศษเพิ่มได้ที่ปุ่มด้านบน!`;
+            promoDescEl.innerHTML = `ซื้อครบ 300 บาท กดสุ่มส่วนลดพิเศษเพิ่มได้ที่ปุ่มด้านล่าง!`;
         }
     }
 }
