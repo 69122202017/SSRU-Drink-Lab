@@ -447,15 +447,38 @@ input {
    PRODUCTS HERO
    ========================================================= */
 
+/* =========================================================
+   PRODUCTS HERO (หน้าสินค้า)
+   ========================================================= */
 .products-hero {
-    width: 100%;
-    padding: 80px 8%;
-    text-align: center;
-    background-image: url('images/banner-true.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff; /* กำหนดสีตัวหนังสือหลักเป็นสีขาว */
+    width: 100% !important;
+    height: 350px !important;
+    padding: 0 8% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background-image: url('images/banner-true.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+}
+
+.products-hero h1 {
+    font-size: 56px !important;
+    margin: 15px 0 !important;
+    color: #ffffff !important;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7) !important;
+}
+
+.products-hero > p:last-child {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
 }
 
 /* ป้าย Tag ด้านบน (🧋 OUR MENU) */
@@ -800,32 +823,43 @@ input {
    CART HERO
    ========================================================= */
 
+/* =========================================================
+   บังคับขนาด Hero Banner ให้ยาวขึ้น (Height 350px)
+   ========================================================= */
+
+/* =========================================================
+   CART HERO (หน้าตะกร้าสินค้า)
+   ========================================================= */
 .cart-hero {
-    width: 100%;
-
-    padding: 80px 8%;
-
-    text-align: center;
-
-    background: linear-gradient(
-        135deg,
-        #F4E8DB,
-        #FFF8F1
-    );
+    width: 100% !important;
+    height: 350px !important;
+    padding: 0 8% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background-image: url('images/banner-tree.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
 }
-
 
 .cart-hero h1 {
-    font-size: 48px;
-    margin: 15px 0;
+    font-size: 56px !important;
+    margin: 15px 0 !important;
+    color: #ffffff !important;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7) !important;
 }
-
 
 .cart-hero > p:last-child {
-    color: var(--text-muted);
-    font-size: 18px;
+    color: #ffffff !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
 }
-
 
 /* =========================================================
    CART SECTION
@@ -1760,3 +1794,4 @@ footer p {
     margin-top: auto; /* ดันให้อยู่ล่างสุดอัตโนมัติ */
     padding-top: 12px;
 }
+
