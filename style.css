@@ -1794,4 +1794,22 @@ footer p {
     margin-top: auto; /* ดันให้อยู่ล่างสุดอัตโนมัติ */
     padding-top: 12px;
 }
+/* ป้าย Tag ด้านบนของหน้า Cart ให้มีพื้นหลังสวยๆ แบบหน้า Product */
+.cart-hero .section-label {
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0.35) !important; /* พื้นหลังสีดำโปร่งแสง */
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    display: inline-block !important;
+}
 
+/* ปรับสีตัวหนังสือหัวข้อหลักและข้อความรองของหน้า Cart ให้เป็นสีขาวชัดเจน */
+.cart-hero h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7) !important;
+}
+
+.cart-hero > p:last-child {
+    color: #ffffff !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+}
